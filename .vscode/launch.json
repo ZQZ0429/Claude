@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "打开简历",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/open.js",
+            "console": "internalConsole"
+        }
+    ]
+}
