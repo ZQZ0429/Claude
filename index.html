@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张明 - 前端开发工程师</title>
+    <meta name="description" content="专业前端开发工程师的个人主页，展示技术能力和项目经验">
+    <meta name="keywords" content="前端开发,JavaScript,React,Vue,HTML,CSS,程序员">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-text">ZM</span>
+                <span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#skills" class="nav-link">技术栈</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="切换导航菜单">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">张明</h1>
+                <h2 class="hero-subtitle">前端开发工程师</h2>
+                <p class="hero-description">
+                    专注于构建优雅、高效的用户界面，热爱技术创新和性能优化。
+                    拥有5年+前端开发经验，擅长React、Vue和现代Web技术。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">联系我</a>
+                    <a href="#about" class="btn btn-secondary">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-snippet">
+                    <pre><code class="language-javascript">// 热爱编码，创造价值
+const passion = "前端开发";
+const skills = ["React", "Vue", "TypeScript"];
+const motto = "代码改变世界";
+
+function createImpact() {
+    return passion + skills.map(s => ` ${s}`) + " | " + motto;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 自我介绍板块 -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我</h2>
+                <p class="section-subtitle">专业背景与技术专长</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>你好，我是张明</h3>
+                    <p>
+                        一名专注于现代Web技术的前端开发工程师，拥有丰富的项目经验和扎实的技术功底。
+                        我热衷于通过代码解决实际问题，创造优秀的用户体验。
+                    </p>
+                    <p>
+                        在过去的5年多时间里，我参与并主导了多个大型Web应用的前端架构设计和开发工作，
+                        积累了丰富的React、Vue生态系统实战经验。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">年开发经验</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">完成项目</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">客户满意度</span>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">UI/UX设计</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="avatar-container">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="avatar-info">
+                            <h4>当前状态</h4>
+                            <p>寻找新的挑战和合作机会</p>
+                            <a href="#contact" class="btn btn-small">立即联系</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术栈展示 -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">技术栈</h2>
+                <p class="section-subtitle">掌握的核心技术和工具</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <p class="skill-description">语义化标签，现代Web标准</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <p class="skill-description">Flexbox, Grid, 动画，响应式设计</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <p class="skill-description">ES6+, 异步编程，设计模式</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">React</h3>
+                    <p class="skill-description">Hooks, Context, Redux, Next.js</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <h3 class="skill-name">Vue.js</h3>
+                    <p class="skill-description">Vue 3, Composition API, Vuex</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-name">Node.js</h3>
+                    <p class="skill-description">Express, REST API, 服务端渲染</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="skill-name">Git</h3>
+                    <p class="skill-description">版本控制，团队协作，CI/CD</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="skill-name">Web性能</h3>
+                    <p class="skill-description">优化，监控， Lighthouse</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">联系我</h2>
+                <p class="section-subtitle">欢迎交流与合作</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>获取联系方式</h3>
+                    <p>扫描二维码添加微信，或通过以下方式联系：</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>邮箱</h4>
+                                <p>zhangming@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/zhangming</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/zhangming</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>电话</h4>
+                                <p>+86 138 0000 0000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WeChat">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Blog">
+                            <i class="fas fa-blog"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-qrcode">
+                    <div class="qrcode-container">
+                        <div class="qrcode-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                            <p>微信二维码</p>
+                        </div>
+                        <div class="qrcode-instruction">
+                            <p><strong>扫描二维码</strong>添加微信好友</p>
+                            <p>请备注"前端交流"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <span class="logo-text">ZM</span>
+                        <span class="logo-dot">.</span>
+                    </a>
+                    <p>专注前端技术，创造优秀用户体验</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我</a></li>
+                        <li><a href="#skills">技术栈</a></li>
+                        <li><a href="#contact">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>保持联系</h4>
+                    <p>订阅我的技术分享</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="输入您的邮箱" required>
+                        <button type="submit">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 张明. 保留所有权利.</p>
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i> 返回顶部
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
