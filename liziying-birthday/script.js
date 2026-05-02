@@ -6,7 +6,7 @@ const saveButton = document.getElementById("saveButton");
 const statusText = document.getElementById("statusText");
 const letterInput = document.getElementById("letterInput");
 
-const storageKey = "birthday-letter-liziying";
+const storageKey = "birthday-letter-liziying-21";
 const particles = [];
 let pulseMode = false;
 
